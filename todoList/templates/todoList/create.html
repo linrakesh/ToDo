@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Create a Post </title>
+    </head>
+<body>
+<h1>Create a To Do Item </h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    Title: <input type="text" name="title"/><br/>
+    Content: <br/>
+    <textarea cols="70" rows="8" name="desc"></textarea><br/>
+    <input type="submit" value="Create Todo"/>
+</form>
+</body>
+</html>

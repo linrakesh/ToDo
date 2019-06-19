@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>UpDate To Do List </title>
+    </head>
+<body>
+<h1>Update a To Do Item </h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    Title: <input type="text" name="title" value="{{post.title}}"/><br/>
+    Content: <br/>
+    <textarea cols="70" rows="8" name="desc">{{post.desc}}</textarea><br/>
+    <input type="submit" value="Update Todo"/>
+</form>
+</body>
+</html>
